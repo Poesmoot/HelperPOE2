@@ -1,0 +1,72 @@
+04.01.2025 19:14 Program exited with message:
+ SharpGen.Runtime.SharpGenException: HRESULT: [0x887A0005], Module: [Vortice.DXGI], ApiCode: [DXGI_ERROR_DEVICE_REMOVED/DeviceRemoved], Message: [Экземпляр устройства GPU приостановлен. Для определения соответствующего действия используйте GetDeviceRemovedReason.
+]
+   at SharpGen.Runtime.Result.ThrowFailureException()
+   at SharpGen.Runtime.Result.CheckError()
+   at Vortice.Direct3D11.ID3D11Device.CreateTexture2D(Texture2DDescription desc, Void* initialData)
+   at Vortice.Direct3D11.ID3D11Device.CreateTexture2D(Texture2DDescription description, SubresourceData[] initialData)
+   at ClickableTransparentOverlay.ImGuiRenderer.CreateImageTexture(Image`1 image, Format format)
+   at ClickableTransparentOverlay.Overlay.AddOrGetImagePointer(String name, Image`1 image, Boolean srgb, IntPtr& handle)
+   at Radar.Radar.GenerateMapTexture() in D:\a\GameOverlay\GameOverlay\Radar\Radar.cs:line 893
+   at Radar.Radar.ClearCachesAndUpdateAreaInfo()+MoveNext() in D:\a\GameOverlay\GameOverlay\Radar\Radar.cs:line 748
+   at Coroutine.ActiveCoroutine.MoveNext()
+   at Coroutine.ActiveCoroutine.OnEvent(Event evt)
+   at Coroutine.CoroutineHandlerInstance.RaiseEvent(Event evt)
+   at Coroutine.CoroutineHandler.RaiseEvent(Event evt)
+   at Coroutine.CoroutineHandlerInstance.InvokeLaterImpl(Wait wait, Action action)+MoveNext()
+   at Coroutine.ActiveCoroutine.MoveNext()
+   at Coroutine.ActiveCoroutine.Tick(Double deltaSeconds)
+   at Coroutine.CoroutineHandlerInstance.<>c__DisplayClass15_0.<Tick>b__0(ActiveCoroutine c)
+   at System.Collections.Generic.List`1.RemoveAll(Predicate`1 match)
+   at Coroutine.CoroutineHandlerInstance.Tick(Double deltaSeconds)
+   at Coroutine.CoroutineHandler.Tick(Double deltaSeconds)
+   at ClickableTransparentOverlay.Overlay.RunInfiniteLoop(CancellationToken token)
+   at ClickableTransparentOverlay.Overlay.<Start>b__27_0()
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_1(Object state)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+------------------------------
+04.01.2025 22:40 Program exited with message:
+ SharpGen.Runtime.SharpGenException: HRESULT: [0x887A0005], Module: [Vortice.DXGI], ApiCode: [DXGI_ERROR_DEVICE_REMOVED/DeviceRemoved], Message: [Экземпляр устройства GPU приостановлен. Для определения соответствующего действия используйте GetDeviceRemovedReason.
+]
+   at SharpGen.Runtime.Result.ThrowFailureException()
+   at SharpGen.Runtime.Result.CheckError()
+   at Vortice.Direct3D11.ID3D11Device.CreateTexture2D(Texture2DDescription desc, Void* initialData)
+   at Vortice.Direct3D11.ID3D11Device.CreateTexture2D(Texture2DDescription description, SubresourceData[] initialData)
+   at ClickableTransparentOverlay.ImGuiRenderer.CreateImageTexture(Image`1 image, Format format)
+   at ClickableTransparentOverlay.Overlay.AddOrGetImagePointer(String name, Image`1 image, Boolean srgb, IntPtr& handle)
+   at Radar.Radar.GenerateMapTexture() in D:\a\GameOverlay\GameOverlay\Radar\Radar.cs:line 893
+   at Radar.Radar.ClearCachesAndUpdateAreaInfo()+MoveNext() in D:\a\GameOverlay\GameOverlay\Radar\Radar.cs:line 748
+   at Coroutine.ActiveCoroutine.MoveNext()
+   at Coroutine.ActiveCoroutine.OnEvent(Event evt)
+   at Coroutine.CoroutineHandlerInstance.RaiseEvent(Event evt)
+   at Coroutine.CoroutineHandler.RaiseEvent(Event evt)
+   at Coroutine.CoroutineHandlerInstance.InvokeLaterImpl(Wait wait, Action action)+MoveNext()
+   at Coroutine.ActiveCoroutine.MoveNext()
+   at Coroutine.ActiveCoroutine.Tick(Double deltaSeconds)
+   at Coroutine.CoroutineHandlerInstance.<>c__DisplayClass15_0.<Tick>b__0(ActiveCoroutine c)
+   at System.Collections.Generic.List`1.RemoveAll(Predicate`1 match)
+   at Coroutine.CoroutineHandlerInstance.Tick(Double deltaSeconds)
+   at Coroutine.CoroutineHandler.Tick(Double deltaSeconds)
+   at ClickableTransparentOverlay.Overlay.RunInfiniteLoop(CancellationToken token)
+   at ClickableTransparentOverlay.Overlay.<Start>b__27_0()
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_1(Object state)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+------------------------------
+25.01.2025 23:07 Program exited with message:
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Atlas.Atlas.EnableControllerMode() in D:\Projetos\Atlas\Atlas\Atlas.cs:line 295
+   at Atlas.Atlas.GetAtlasNodes() in D:\Projetos\Atlas\Atlas\Atlas.cs:line 266
+   at Atlas.Atlas.DrawUI() in D:\Projetos\Atlas\Atlas\Atlas.cs:line 147
+   at GameHelper.Plugin.PManager.DrawPluginUiRenderCoroutine()+MoveNext()
+   at Coroutine.ActiveCoroutine.MoveNext()
+   at Coroutine.ActiveCoroutine.OnEvent(Event evt)
+   at Coroutine.CoroutineHandlerInstance.RaiseEvent(Event evt)
+   at Coroutine.CoroutineHandler.RaiseEvent(Event evt)
+   at ClickableTransparentOverlay.Overlay.RunInfiniteLoop(CancellationToken token)
+   at ClickableTransparentOverlay.Overlay.<Start>b__28_0()
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_1(Object state)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+------------------------------
